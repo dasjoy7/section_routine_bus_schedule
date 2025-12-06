@@ -1,16 +1,33 @@
-# section_routine
+# 📚 CSE61C Routine App  
+A Flutter application designed for university students to view **class routines**, **bus schedules**, and **upcoming events** — all stored **locally using Hive**, so the app works completely **offline**.
 
-A new Flutter project.
+---
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+### 🗓 Class Routine (Auto by Day)
+- Shows **today’s routine automatically**
+- Displays courses, times, and teachers
+- Fully offline — no internet required
 
-A few resources to get you started if this is your first Flutter project:
+### 🚌 Bus Schedule (Auto by Day)
+- Day-wise bus timing system
+- Automatically shows **today’s bus schedule**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🎉 Events (Hive Local Storage)
+- Add and store events locally
+- Each event includes:
+  - Course
+  - Category
+  - Time (stored in DateTime)
+  - Description
+- Uses Hive database for fast offline storage
+- Events are listed on the **Events Page**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🏠 Dashboard
+- Shows the **next upcoming event**
+- Event automatically disappears after the event time passes
+
+### 📦 Offline Support
+This app works **100% offline**  
+All data is saved in the device using Hive.
